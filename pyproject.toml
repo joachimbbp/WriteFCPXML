@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "writefcpxml"
+version = "0.1.0"
+description = ""
+authors = ["joachimbbp <104856283+joachimbbp@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.13.4"
+lxml = "^5.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
