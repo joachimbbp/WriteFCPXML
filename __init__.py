@@ -15,7 +15,7 @@ class LtcChangeTable:
         print('     end value: ', self.end_value)
 class Clip:
     def __init__(self):
-        self.source_file
+        self.source_file = None
         self.creation_date = None
         self.timecode_fps = None
         self.ltc_change_table = LtcChangeTable()
@@ -53,5 +53,5 @@ for file in os.listdir(camera_folder):
     if file.endswith('.XML'):
         clips.append(parse_xml("{}/{}".format(camera_folder, file)))
 for clip in clips:
-    clip.ltc_change_table.printout()
+    clip.printout()
 print("Finished")
